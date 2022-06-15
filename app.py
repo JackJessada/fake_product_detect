@@ -22,11 +22,11 @@ st.write('มีวัตถุประสงค์ให้คนไม่ถ�
 #webdriver
 @st.experimental_singleton
 def installff():
-  os.system('./geckodriver.exe')
-  os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
-  os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/streamlit/scriptrunner/script_runner /home/appuser/venv/bin/script_runner')
-  os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver /home/appuser/venv/bin/webdriver')
-  os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/selenium/webdriver/common/service /home/appuser/venv/bin/service')
+  os.system('.\geckodriver.exe')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/streamlit/scriptrunner/script_runner /home/appuser/venv/bin/script_runner')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/selenium/webdriver/firefox/webdriver /home/appuser/venv/bin/webdriver')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/selenium/webdriver/common/service /home/appuser/venv/bin/service')
 
 _ = installff()
 from selenium import webdriver
