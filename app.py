@@ -22,8 +22,8 @@ st.write('มีวัตถุประสงค์ให้คนไม่ถ�
 #webdriver
 @st.experimental_singleton
 def installff():
-  os.system('F://Code/project/fake_product_detect/geckodriver.exe')
-  os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
+  os.system('./geckodriver.exe')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
   os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/streamlit/scriptrunner/script_runner.py /home/appuser/venv/bin/script_runner.py')
   os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py /home/appuser/venv/bin/webdriver.py')
   os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/selenium/webdriver/common/service.py /home/appuser/venv/bin/service.py')
