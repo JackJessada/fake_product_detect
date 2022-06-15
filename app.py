@@ -191,3 +191,4 @@ with st.form("my_form",True):
         t1 = time.time()
         st.write('เวลาในการคำนวณ: %f'%(t1-t0))
         driver.quit()
+print(os.listdir('.'))
