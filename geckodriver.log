@@ -3468,7 +3468,8 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 Read port: 64835
 1655296508730	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 DevTools listening on ws://localhost:64782/devtools/browser/efec3818-323c-47a0-8f63-0ebaea6d7577
-1655296530290	geckodriver	INFO	Listening on 127.0.0.1:64980
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:64980
 1655296533285	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "64981" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilec6aPwq"
 *** You are running in headless mode.
 1655296534036	Marionette	INFO	Marionette enabled
@@ -3511,3 +3512,14 @@ JavaScript warning: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//a
 
 ###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
 
+1655297181711	geckodriver	INFO	Listening on 127.0.0.1:52282
+1655297184694	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "52283" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilez8O87A"
+*** You are running in headless mode.
+1655297185434	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:52283
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilez8O87A\\search.json.mozlz4", (void 0)))
+1655297187909	Marionette	INFO	Listening on port 52335
+Read port: 52335
+1655297188028	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:52283/devtools/browser/29c09479-d677-4bbd-828a-fabeb1e4ac42
