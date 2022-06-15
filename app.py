@@ -12,7 +12,7 @@ import math
 from selenium.webdriver.common.keys import Keys
 import numpy as np
 
-
+st.write(os.listdir('.'))
 clf = load('rf.joblib')
 st.title('Aibuilder-Project')
 st.header('Fake product detect')
@@ -191,4 +191,3 @@ with st.form("my_form",True):
         t1 = time.time()
         st.write('เวลาในการคำนวณ: %f'%(t1-t0))
         driver.quit()
-print(os.listdir('.'))
