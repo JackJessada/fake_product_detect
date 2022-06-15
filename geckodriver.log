@@ -3117,12 +3117,14 @@ JavaScript warning: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//a
 1655292820682	Marionette	INFO	Marionette enabled
 WebDriver BiDi listening on ws://localhost:63379
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileNeVAv6\\search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\UJavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Av6\\search.json.mozlz4", (void 0)))
 1655292823957	Marionette	INFO	Listening on port 63471
 DevTools listening on ws://localhost:63379/devtools/browser/76cab020-5d9e-40cd-9d4b-82080bc1f0ef
 Read port: 63471
 1655292824130	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1655292833592	geckodriver	INFO	Listening on 127.0.0.1:63544
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:63544
 1655292836551	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "63545" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilevbpE0H"
 *** You are running in headless mode.
 1655292837577	Marionette	INFO	Marionette enabled
@@ -3188,7 +3190,8 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 Read port: 64377
 DevTools listening on ws://localhost:64318/devtools/browser/4f8cc360-e831-4706-9189-48e98b61f434
 1655292961643	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1655292982747	geckodriver	INFO	Listening on 127.0.0.1:64537
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:64537
 1655292985755	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "64538" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileiSdugv"
 *** You are running in headless mode.
 1655292986987	Marionette	INFO	Marionette enabled
@@ -3292,3 +3295,50 @@ JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: The current pr
 JavaScript warning: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/db0f232d6248515605a4ab4db4344121.169dc8dc358a9e144931.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 1655293211784	Marionette	INFO	Stopped listening on port 65354
 !!! error running onStopped callback: TypeError: callback is not a function
+1655293691621	geckodriver	INFO	Listening on 127.0.0.1:51710
+1655293694591	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "51711" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilerDOEOQ"
+*** You are running in headless mode.
+1655293695563	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:51711
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilerDOEOQ\\search.json.mozlz4", (void 0)))
+1655293698156	Marionette	INFO	Listening on port 51770
+DevTools listening on ws://localhost:51711/devtools/browser/3746eecc-f0ff-4db7-9df0-b54e5bfc2b0c
+Read port: 51770
+1655293698630	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655293728105	geckodriver	INFO	Listening on 127.0.0.1:51956
+1655293731162	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "51957" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofile7hfj9n"
+*** You are running in headless mode.
+1655293731765	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:51957
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofile7hfj9n\\search.json.mozlz4", (void 0)))
+1655293733715	Marionette	INFO	Listening on port 52005
+DevTools listening on ws://localhost:51957/devtools/browser/ed9ed70e-3544-4e1b-aaa0-70af517d0739
+Read port: 52005
+1655293733789	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://deo.shopeemobile.com/shopee/shopee-trackingsdk-live-sg/require-trackingsdk.js, line 9: Error: Script error for "https://deo.shopeemobile.com/shopee/shopee-trackingsdk-live-sg/amd/@shopee/tracking-ubt@28c0055.min.js"
+https://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://deo.shopeemobile.com/shopee/shopee-trackingsdk-live-sg/require-trackingsdk.js, line 9: Error: Script error for "https://deo.shopeemobile.com/shopee/shopee-trackingsdk-live-sg/amd/@shopee/tracking-algo@28c0055.min.js"
+https://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/webpack-runtime.4a694a3feef683be9ae6.js, line 1: ChunkLoadError: Loading chunk 5641 failed.
+(error: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/5641.1857ae10cff5be0dcf51.js)
+JavaScript error: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/webpack-runtime.4a694a3feef683be9ae6.js, line 1: ChunkLoadError: Loading chunk 7950 failed.
+(error: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/shopee_duss.c3c5721415c222b07418.js)
+JavaScript warning: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/5641.1857ae10cff5be0dcf51.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/5641.1857ae10cff5be0dcf51.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/5641.1857ae10cff5be0dcf51.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: linkProgram: Must have a compiled fragment shader attached:
+SHADER_INFO_LOG:
+ERROR: 0:1: ')' : syntax error
+
+JavaScript warning: , line 0: WebGL warning: useProgram: Program must be linked successfully.
+JavaScript warning: , line 0: WebGL warning: vertexAttribI?Pointer: `index` (4294967295) must be < MAX_VERTEX_ATTRIBS.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: The current program is not linked.
+JavaScript warning: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/db0f232d6248515605a4ab4db4344121.169dc8dc358a9e144931.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 20872, MediaDecoderStateMachine #1] WARNING: 2e9e0931ef0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:317
+1655293755017	Marionette	INFO	Stopped listening on port 52005
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
