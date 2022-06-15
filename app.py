@@ -24,9 +24,9 @@ st.write('มีวัตถุประสงค์ให้คนไม่ถ�
 def installff():
   os.system('./geckodriver.exe')
   os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
-  os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/streamlit/scriptrunner/script_runner.py /home/appuser/venv/bin/script_runner.py')
-  os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/selenium/webdriver/firefox/webdriver.py /home/appuser/venv/bin/webdriver.py')
-  os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/selenium/webdriver/common/service.py /home/appuser/venv/bin/service.py')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/streamlit/scriptrunner/script_runner /home/appuser/venv/bin/script_runner')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/selenium/webdriver/firefox/webdriver /home/appuser/venv/bin/webdriver')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/selenium/webdriver/common/service /home/appuser/venv/bin/service')
 
 _ = installff()
 from selenium import webdriver
@@ -191,6 +191,3 @@ with st.form("my_form",True):
         t1 = time.time()
         st.write('เวลาในการคำนวณ: %f'%(t1-t0))
         driver.quit()
-    
-        
-        
