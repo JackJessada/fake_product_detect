@@ -2,7 +2,7 @@ from time import time
 import pandas as pd
 import streamlit as st
 from joblib import load
-import os, sys
+#import os, sys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 import bs4
@@ -14,8 +14,7 @@ import numpy as np
 from selenium import webdriver
 from selenium.webdriver import FirefoxOptions
 from selenium.webdriver.edge.service import Service
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium.webdriver.firefox.options import Options
+#from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.firefox.service import Service
 import geckodriver_autoinstaller
 
@@ -27,10 +26,11 @@ st.write('มีวัตถุประสงค์ให้คนไม่ถ�
 
 opts = FirefoxOptions()
 opts.add_argument("--headless")
-service = Service(geckodriver_autoinstaller)
+service = Service('./geckodriver')
 driver = webdriver.Firefox(
     options=opts,
     service=service,
+    firefox_binary="/usr/bin/firefox"
 )
 
 wait=WebDriverWait(driver, 10) #ไว้ wait
