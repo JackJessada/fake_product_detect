@@ -24,13 +24,13 @@ st.write('มีวัตถุประสงค์ให้คนไม่ถ�
 #webdriver
 @st.experimental_singleton
 def installff():
-  os.system('./geckodriver')
   os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
 
+s=Service('./geckodriver')
 _ = installff()
 opts = FirefoxOptions()
 opts.add_argument("--headless")
-driver = webdriver.Firefox(options=opts)
+driver = webdriver.Firefox(options=opts,Service=s)
 
 #driver = webdriver.Edge(service=s)
 
