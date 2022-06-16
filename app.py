@@ -30,7 +30,7 @@ s=Service('./geckodriver')
 _ = installff()
 opts = FirefoxOptions()
 opts.add_argument("--headless")
-driver = webdriver.Firefox(options=opts,Service=s)
+driver = webdriver.Firefox(options=opts,service=s)
 
 #driver = webdriver.Edge(service=s)
 
