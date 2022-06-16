@@ -15,6 +15,10 @@ from selenium import webdriver
 from selenium.webdriver import FirefoxOptions
 from selenium.webdriver.edge.service import Service
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
+from webdriver_manager.firefox import GeckoDriverManager
+
 clf = load('clf_model.joblib')
 st.title('Aibuilder-Project')
 st.header('Fake product detect')
@@ -26,13 +30,13 @@ st.write('มีวัตถุประสงค์ให้คนไม่ถ�
 def installff():
   os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
 
-s=Service('./geckodriver')
-_ = installff()
-opts = FirefoxOptions()
-opts.add_argument("--headless")
-driver = webdriver.Firefox(options=opts,service=s)
-
-#driver = webdriver.Edge(service=s)
+firefoxOptions = Options()
+firefoxOptions.add_argument("--headless")
+service = Service(GeckoDriverManager().install())
+driver = webdriver.Firefox(
+    options=firefoxOptions,
+    service=service,
+)
 
 wait=WebDriverWait(driver, 10) #ไว้ wait
 def k_and_m_to_float(txt):
