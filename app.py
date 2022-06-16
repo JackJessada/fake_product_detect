@@ -17,7 +17,7 @@ from selenium.webdriver.edge.service import Service
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.service import Service
-from webdriver_manager.firefox import GeckoDriverManager
+import geckodriver_autoinstaller
 
 clf = load('clf_model.joblib')
 st.title('Aibuilder-Project')
@@ -25,16 +25,11 @@ st.header('Fake product detect')
 st.subheader('โมเดลนี้เป็นโมเดลสำหรับแยกของปลอม ของแท้ และของไม่มีแบรนด์')
 st.write('มีวัตถุประสงค์ให้คนไม่ถูกหลอกในการซื้อของปลอมจาก shopee โปรเจกต์นี้เป็นส่วนหนึ่งของโครงการ AI Builders GEN 2 จากความร่วมมือระหว่าง VISTEC, AIResearch และ Central Digital และผู้สนับสนุนเพิ่มเติมจาก VISAI, Krungsri Nimble, AWS, AIA, DELL และ Kasikorn Bank')
 
-#webdriver
-@st.experimental_singleton
-def installff():
-  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
-
-firefoxOptions = Options()
-firefoxOptions.add_argument("--headless")
-service = Service(GeckoDriverManager().install())
+opts = FirefoxOptions()
+opts.add_argument("--headless")
+service = Service(geckodriver_autoinstaller)
 driver = webdriver.Firefox(
-    options=firefoxOptions,
+    options=opts,
     service=service,
 )
 
