@@ -20,7 +20,7 @@ st.header('Fake product detect')
 st.subheader('โมเดลนี้เป็นโมเดลสำหรับแยกของปลอม ของแท้ และของไม่มีแบรนด์')
 st.write('มีวัตถุประสงค์ให้คนไม่ถูกหลอกในการซื้อของปลอมจาก shopee โปรเจกต์นี้เป็นส่วนหนึ่งของโครงการ AI Builders GEN 2 จากความร่วมมือระหว่าง VISTEC, AIResearch และ Central Digital และผู้สนับสนุนเพิ่มเติมจาก VISAI, Krungsri Nimble, AWS, AIA, DELL และ Kasikorn Bank')
 
-s = Service(r'./geckodriver.exe')
+s = Service(r'./geckodriver')
 opts = FirefoxOptions()
 opts.add_argument("--headless")
 driver = webdriver.Firefox(options=opts,service=s)
