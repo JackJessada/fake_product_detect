@@ -25,7 +25,7 @@ st.write('มีวัตถุประสงค์ให้คนไม่ถ�
 @st.experimental_singleton
 def installff():
   os.system('./geckodriver')
-  os.system('ln -s /home/appuser/venv/lib/python3.9/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
 
 _ = installff()
 opts = FirefoxOptions()
