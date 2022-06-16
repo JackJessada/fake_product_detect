@@ -3612,7 +3612,8 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 Read port: 57414
 1655344415322	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 DevTools listening on ws://localhost:57348/devtools/browser/31a38682-4d03-4227-8b8b-3ce79d937876
-1655344486093	geckodriver	INFO	Listening on 127.0.0.1:57881
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:57881
 1655344489250	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "57882" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilejvTexh"
 *** You are running in headless mode.
 1655344489863	Marionette	INFO	Marionette enabled
@@ -3659,3 +3660,49 @@ JavaScript warning: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//a
 
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
+1655345467809	geckodriver	INFO	Listening on 127.0.0.1:63424
+1655345470836	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "63425" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilexBav9D"
+*** You are running in headless mode.
+1655345471637	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:63425
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilexBav9D\\search.json.mozlz4", (void 0)))
+1655345473342	Marionette	INFO	Listening on port 63474
+DevTools listening on ws://localhost:63425/devtools/browser/8a1f5cc7-f970-41fa-aa3e-ee9ce3599bb1
+Read port: 63474
+1655345473390	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:61499
+1655346216428	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "61500" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileRMmihf"
+*** You are running in headless mode.
+1655346216973	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:61500
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileRMmihf\\search.json.mozlz4", (void 0)))
+1655346218806	Marionette	INFO	Listening on port 61556
+DevTools listening on ws://localhost:61500/devtools/browser/9ba31b3f-dc77-436b-b733-93d1fbbdcf8c
+Read port: 61556
+1655346218950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:62559
+1655346402889	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "62560" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileJs7OSY"
+*** You are running in headless mode.
+1655346403861	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:62560
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileJs7OSY\\search.json.mozlz4", (void 0)))
+1655346406163	Marionette	INFO	Listening on port 62619
+DevTools listening on ws://localhost:62560/devtools/browser/29b8e412-c204-469a-b9c4-a8d4060147fa
+Read port: 62619
+1655346406334	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655346971451	geckodriver	INFO	Listening on 127.0.0.1:64363
+1655346974453	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "64364" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileL3mkBj"
+*** You are running in headless mode.
+1655346974925	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:64364
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileL3mkBj\\search.json.mozlz4", (void 0)))
+1655346976502	Marionette	INFO	Listening on port 64409
+Read port: 64409
+1655346976542	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:64364/devtools/browser/c5abd8f5-8bef-49c3-889b-4fe438594b4e

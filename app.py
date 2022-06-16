@@ -1,7 +1,7 @@
 from time import time
 import pandas as pd
 import streamlit as st
-from joblib import load
+from joblib import load,dump
 import os, sys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -12,8 +12,7 @@ import math
 from selenium.webdriver.common.keys import Keys
 import numpy as np
 
-st.write(os.listdir('.'))
-clf = load('rf_clf.joblib')
+clf = load('rf.joblib')
 st.title('Aibuilder-Project')
 st.header('Fake product detect')
 st.subheader('โมเดลนี้เป็นโมเดลสำหรับแยกของปลอม ของแท้ และของไม่มีแบรนด์')
