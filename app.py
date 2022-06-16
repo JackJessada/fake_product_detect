@@ -1,3 +1,4 @@
+from msilib.schema import Binary
 from time import time
 import pandas as pd
 import streamlit as st
@@ -30,7 +31,7 @@ service = Service('./geckodriver')
 driver = webdriver.Firefox(
     options=opts,
     service=service,
-    firefox_binary="/usr/bin/firefox"
+    firefox_binary=Binary
 )
 
 wait=WebDriverWait(driver, 10) #ไว้ wait
