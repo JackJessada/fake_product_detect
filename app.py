@@ -12,8 +12,20 @@ import math
 from selenium.webdriver.common.keys import Keys
 import numpy as np
 
-st.write(os.listdir('.'))
-clf = load('rf_clf.joblib')
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+rf_clf = RandomForestClassifier(max_depth=10, random_state=0)
+
+
+df=pd.read_excel(r"F://Code/Shopee_Data_Scraping/rawdata/secounddataset.xlsx")
+X = df.drop(['ID', 'url', 'name', 'comment', 'Label'], axis=1)
+y = df['Label']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=2)
+
+j=rf_clf.fit(X_train,y_train)
+dump(j,'rf.joblib')
+
+clf = load('rf.joblib')
 st.title('Aibuilder-Project')
 st.header('Fake product detect')
 st.subheader('โมเดลนี้เป็นโมเดลสำหรับแยกของปลอม ของแท้ และของไม่มีแบรนด์')

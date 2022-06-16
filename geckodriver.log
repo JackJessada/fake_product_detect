@@ -3719,3 +3719,27 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://localhost:65114/devtools/browser/55e73b96-db5d-4c1f-ac84-4774105bff0d
 Read port: 65163
 1655348314288	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:49185
+1655348385775	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "49186" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilePPTjTu"
+*** You are running in headless mode.
+1655348386256	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:49186
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofilePPTjTu\\search.json.mozlz4", (void 0)))
+1655348388085	Marionette	INFO	Listening on port 49240
+DevTools listening on ws://localhost:49186/devtools/browser/bcda008b-6bfc-4dbc-8fbf-424945c7b08f
+Read port: 49240
+1655348388320	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1655349676741	geckodriver	INFO	Listening on 127.0.0.1:56286
+1655349679729	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "56287" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileMsp5df"
+*** You are running in headless mode.
+1655349680490	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:56287
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileMsp5df\\search.json.mozlz4", (void 0)))
+1655349682038	Marionette	INFO	Listening on port 56340
+Read port: 56340
+DevTools listening on ws://localhost:56287/devtools/browser/06297068-3155-449b-a6b5-b48c7368620f
+1655349682128	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
