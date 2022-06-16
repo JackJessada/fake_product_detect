@@ -20,10 +20,16 @@ st.header('Fake product detect')
 st.subheader('โมเดลนี้เป็นโมเดลสำหรับแยกของปลอม ของแท้ และของไม่มีแบรนด์')
 st.write('มีวัตถุประสงค์ให้คนไม่ถูกหลอกในการซื้อของปลอมจาก shopee โปรเจกต์นี้เป็นส่วนหนึ่งของโครงการ AI Builders GEN 2 จากความร่วมมือระหว่าง VISTEC, AIResearch และ Central Digital และผู้สนับสนุนเพิ่มเติมจาก VISAI, Krungsri Nimble, AWS, AIA, DELL และ Kasikorn Bank')
 
-s = Service(r'./geckodriver')
+#webdriver
+@st.experimental_singleton
+def installff():
+  os.system('./geckodriver')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
+
+_ = installff()
 opts = FirefoxOptions()
 opts.add_argument("--headless")
-driver = webdriver.Firefox(options=opts,service=s)
+driver = webdriver.Firefox(options=opts)
 
 wait=WebDriverWait(driver, 10) #ไว้ wait
 def k_and_m_to_float(txt):
