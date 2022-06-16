@@ -13,7 +13,7 @@ from selenium.webdriver.common.keys import Keys
 import numpy as np
 
 st.write(os.listdir('.'))
-clf = load('rf.joblib')
+clf = load('rf_clf.joblib')
 st.title('Aibuilder-Project')
 st.header('Fake product detect')
 st.subheader('โมเดลนี้เป็นโมเดลสำหรับแยกของปลอม ของแท้ และของไม่มีแบรนด์')
