@@ -3756,8 +3756,8 @@ DevTools listening on ws://localhost:59196/devtools/browser/c9595d96-c5e4-4bc0-9
 Read port: 59245
 1655350207032	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
-1:59330
-1655350221009	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "59331" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileUEMFR5"
+Exiting due to channel error.
+::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "59331" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileUEMFR5"
 *** You are running in headless mode.
 1655350221484	Marionette	INFO	Marionette enabled
 WebDriver BiDi listening on ws://localhost:59331
@@ -3863,7 +3863,8 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://localhost:63392/devtools/browser/48e3b34c-33f6-4331-a084-819a37a6303f
 Read port: 53467
 1655365790329	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1655365818273	geckodriver	INFO	Listening on 127.0.0.1:53667
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:53667
 1655365821245	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "53668" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileZdnngf"
 *** You are running in headless mode.
 1655365821707	Marionette	INFO	Marionette enabled
@@ -3874,8 +3875,9 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://localhost:53668/devtools/browser/84b0c8ab-1d05-47d8-85e4-a8843b58013a
 Read port: 53716
 1655365823432	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1655365829963	geckodriver	INFO	Listening on 127.0.0.1:53778
-1655365832944	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "53779" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileV3Ng2W"
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "53779" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileV3Ng2W"
 *** You are running in headless mode.
 1655365833560	Marionette	INFO	Marionette enabled
 WebDriver BiDi listening on ws://localhost:53779
@@ -3915,3 +3917,15 @@ JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Pr
 JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: The current program is not linked.
 JavaScript warning: https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/db0f232d6248515605a4ab4db4344121.169dc8dc358a9e144931.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 1655365851716	Marionette	INFO	Stopped listening on port 53827
+1655368541587	geckodriver	INFO	Listening on 127.0.0.1:51115
+1655368544624	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "51116" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileXx8yOP"
+*** You are running in headless mode.
+1655368545602	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:51116
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileXx8yOP\\search.json.mozlz4", (void 0)))
+1655368547352	Marionette	INFO	Listening on port 51171
+DevTools listening on ws://localhost:51116/devtools/browser/8c812708-e047-49e2-9eab-f750b5d35a50
+Read port: 51171
+1655368547415	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
