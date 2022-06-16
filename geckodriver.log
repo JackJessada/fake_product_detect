@@ -3743,7 +3743,8 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 Read port: 56340
 DevTools listening on ws://localhost:56287/devtools/browser/06297068-3155-449b-a6b5-b48c7368620f
 1655349682128	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1655350201412	geckodriver	INFO	Listening on 127.0.0.1:59195
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:59195
 1655350204408	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "59196" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofile0H9b08"
 *** You are running in headless mode.
 1655350205099	Marionette	INFO	Marionette enabled
@@ -3754,7 +3755,8 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://localhost:59196/devtools/browser/c9595d96-c5e4-4bc0-9211-0b3946104b33
 Read port: 59245
 1655350207032	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1655350218017	geckodriver	INFO	Listening on 127.0.0.1:59330
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:59330
 1655350221009	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "59331" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Jack\\AppData\\Local\\Temp\\rust_mozprofileUEMFR5"
 *** You are running in headless mode.
 1655350221484	Marionette	INFO	Marionette enabled

@@ -1,7 +1,7 @@
 from time import time
 import pandas as pd
 import streamlit as st
-from joblib import load,dump
+from joblib import load
 import os, sys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -11,28 +11,19 @@ import time
 import math
 from selenium.webdriver.common.keys import Keys
 import numpy as np
-
+from selenium import webdriver
+from selenium.webdriver import FirefoxOptions
+from selenium.webdriver.edge.service import Service
 clf = load('clf_model.joblib')
 st.title('Aibuilder-Project')
 st.header('Fake product detect')
 st.subheader('โมเดลนี้เป็นโมเดลสำหรับแยกของปลอม ของแท้ และของไม่มีแบรนด์')
 st.write('มีวัตถุประสงค์ให้คนไม่ถูกหลอกในการซื้อของปลอมจาก shopee โปรเจกต์นี้เป็นส่วนหนึ่งของโครงการ AI Builders GEN 2 จากความร่วมมือระหว่าง VISTEC, AIResearch และ Central Digital และผู้สนับสนุนเพิ่มเติมจาก VISAI, Krungsri Nimble, AWS, AIA, DELL และ Kasikorn Bank')
 
-#webdriver
-@st.experimental_singleton
-def installff():
-  os.system('./geckodriver.exe')
-  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
-  #os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/streamlit/scriptrunner/script_runner /home/appuser/venv/bin/script_runner')
-  #os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/selenium/webdriver/firefox/webdriver /home/appuser/venv/bin/webdriver')
-  #os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/selenium/webdriver/common/service /home/appuser/venv/bin/service')
-
-_ = installff()
-from selenium import webdriver
-from selenium.webdriver import FirefoxOptions
+s = Service(r'./geckodriver.exe')
 opts = FirefoxOptions()
 opts.add_argument("--headless")
-driver = webdriver.Firefox(options=opts)
+driver = webdriver.Firefox(options=opts,service=s)
 
 wait=WebDriverWait(driver, 10) #ไว้ wait
 def k_and_m_to_float(txt):
