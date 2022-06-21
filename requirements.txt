@@ -14,4 +14,3 @@ selenium==4.1.0
 sklearn==0.0
 streamlit==1.10.0
 webdriver-manager==3.7.0
-
