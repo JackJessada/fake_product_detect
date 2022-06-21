@@ -16,17 +16,16 @@ from selenium.webdriver import FirefoxOptions
 from selenium.webdriver.edge.service import Service
 #from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.firefox.service import Service
-import geckodriver_autoinstaller
 
-clf = load('clf_model.joblib')
+clf = load('rf_clf_model.joblib')
 st.title('Aibuilder-Project')
-st.header('Fake product detect')
+st.header('Fake product detect(still not good enough to use)')
 st.subheader('โมเดลนี้เป็นโมเดลสำหรับแยกของปลอม ของแท้ และของไม่มีแบรนด์')
 st.write('มีวัตถุประสงค์ให้คนไม่ถูกหลอกในการซื้อของปลอมจาก shopee โปรเจกต์นี้เป็นส่วนหนึ่งของโครงการ AI Builders GEN 2 จากความร่วมมือระหว่าง VISTEC, AIResearch และ Central Digital และผู้สนับสนุนเพิ่มเติมจาก VISAI, Krungsri Nimble, AWS, AIA, DELL และ Kasikorn Bank')
 
 opts = FirefoxOptions()
 opts.add_argument("--headless")
-service = Service('./geckodriver')
+service = Service('./geckodriver') #driver เลือกระหว่าง linux กับ window(มี .exe ต่อท้าย)
 driver = webdriver.Firefox(
     options=opts,
     service=service,
@@ -175,11 +174,9 @@ with st.form("my_form",True):
         scrape()
         shopee=pd.DataFrame([new_url_L,name_L,price_L,sold_L,amount_reviewer_L,all_store_reviewer_L,all_product_store_L,response_rate_L,follower_L,joined_L,rating_L]).transpose()
         shopee.columns=['url','name','price','sold','amount reviewer','all reviewer of store','amount product','response rate','follower','joined','rating']
-        st.write(shopee)
+        st.write(f'## {name_L[0]}')
         chaper=clf.predict_proba(shopee.drop(['url','name'],axis=1))
-        st.write(chaper)
         cha=clf.predict(shopee.drop(['url','name'],axis=1))
-        st.write(cha)
         st.write(f'### มีโอกาสเป็นของปลอม {round(chaper[0,0]*100)} %')
         st.write(f'### มีโอกาสเป็นของแท้ {round(chaper[0,1]*100)} %')
         st.write(f'### มีโอกาสเป็นของไม่มีแบรนด์ {round(chaper[0,2]*100)} %')
