@@ -4,7 +4,7 @@
 - โดยมีแนวทางของโครงการดังนี้ https://ai-builders.github.io/orientation-2022/
 - [Medium](https://medium.com/@jessadajackpranee/%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B8%A5%E0%B8%AD%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%9A-e-commerce-c2d1bb142e2e)
 - [Notebook](https://github.com/JackJessada/fake_product_detect/blob/main/Fake_Product_Detect_Nb.ipynb)
-- [streamlit](http://18.136.200.89/)
+- [streamlit](https://54.255.62.149/)
 # การใช้งาน
 ### shopee scrape
 ใครที่อยากได้ตัว scrape ให้ดูได้จากตัว notebook ข้างบนได้เลย บางทีตัวเว็บ shopee ก็มีการเปลี่ยน tag เปลี่ยน attribute บ้างดูด้วยว่ายังเป็นอันเดิมไหม
