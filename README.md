@@ -3,6 +3,8 @@
 มีวัตถุประสงค์ให้คนไม่ถูกหลอกในการซื้อของปลอมจาก shopee โปรเจกต์นี้เป็นส่วนหนึ่งของโครงการ AI Builders GEN 2 จากความร่วมมือระหว่าง VISTEC, AIResearch และ Central Digital และผู้สนับสนุนเพิ่มเติมจาก VISAI, Krungsri Nimble, AWS, AIA, DELL และ Kasikorn Bank
 - โดยมีแนวทางของโครงการดังนี้ https://ai-builders.github.io/orientation-2022/
 - [Medium](https://medium.com/@jessadajackpranee/%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B8%A5%E0%B8%AD%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%9A-e-commerce-c2d1bb142e2e)
+- [Notebook](https://github.com/JackJessada/fake_product_detect/blob/main/Fake_Product_Detect_Nb.ipynb)
+- [streamlit](https://54.255.62.149/)
 # การใช้งาน
 ### shopee scrape
 ใครที่อยากได้ตัว scrape ให้ดูได้จากตัว notebook ข้างบนได้เลย บางทีตัวเว็บ shopee ก็มีการเปลี่ยน tag เปลี่ยน attribute บ้างดูด้วยว่ายังเป็นอันเดิมไหม
