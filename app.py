@@ -171,17 +171,20 @@ with st.form("my_form",True):
         new_url_L=[]
         t0 = time.time()
         url_L.append(title)
-        scrape()
-        shopee=pd.DataFrame([new_url_L,name_L,price_L,sold_L,amount_reviewer_L,all_store_reviewer_L,all_product_store_L,response_rate_L,follower_L,joined_L,rating_L]).transpose()
-        shopee.columns=['url','name','price','sold','amount reviewer','all reviewer of store','amount product','response rate','follower','joined','rating']
-        st.write(f'## {name_L[0]}')
-        chaper=clf.predict_proba(shopee.drop(['url','name'],axis=1))
-        cha=clf.predict(shopee.drop(['url','name'],axis=1))
-        st.write(f'### มีโอกาสเป็นของปลอม {round(chaper[0,0]*100)} %')
-        st.write(f'### มีโอกาสเป็นของแท้ {round(chaper[0,1]*100)} %')
-        st.write(f'### มีโอกาสเป็นของไม่มีแบรนด์ {round(chaper[0,2]*100)} %')
-        type_L=['ปลอม','แท้','ไม่มีแบรนด์']
-        st.write(f'## มีโอกาสเป็นของ{type_L[cha[0]]}มากที่สุด')
-        t1 = time.time()
-        st.write('เวลาในการคำนวณ: %f'%(t1-t0))
-        driver.quit()
+        try:
+            scrape()
+            shopee=pd.DataFrame([new_url_L,name_L,price_L,sold_L,amount_reviewer_L,all_store_reviewer_L,all_product_store_L,response_rate_L,follower_L,joined_L,rating_L]).transpose()
+            shopee.columns=['url','name','price','sold','amount reviewer','all reviewer of store','amount product','response rate','follower','joined','rating']
+            st.write(f'## {name_L[0]}')
+            chaper=clf.predict_proba(shopee.drop(['url','name'],axis=1))
+            cha=clf.predict(shopee.drop(['url','name'],axis=1))
+            st.write(f'### มีโอกาสเป็นของปลอม {round(chaper[0,0]*100)} %')
+            st.write(f'### มีโอกาสเป็นของแท้ {round(chaper[0,1]*100)} %')
+            st.write(f'### มีโอกาสเป็นของไม่มีแบรนด์ {round(chaper[0,2]*100)} %')
+            type_L=['ปลอม','แท้','ไม่มีแบรนด์']
+            st.write(f'## มีโอกาสเป็นของ{type_L[cha[0]]}มากที่สุด')
+            t1 = time.time()
+            st.write('เวลาในการคำนวณ: %f'%(t1-t0))
+            driver.quit()
+        except:
+            st.write('โปรดลองอีกครั้งโดยใช้ลิงค์ shopee')
